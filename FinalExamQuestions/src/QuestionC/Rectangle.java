@@ -7,7 +7,14 @@ public class Rectangle extends Shape {
 	}
 
 	@Override
-	void draw() {
+	void draw() throws IllegalRectangle {
+		
+		
+		if(this.getX() < 0 & this.getY() < 0)
+		{
+			throw new IllegalRectangle();
+		}
+}
 	}
 
 	@Override
